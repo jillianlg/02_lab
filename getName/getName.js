@@ -1,11 +1,5 @@
-const spot = {
-    name: 'spot',
-    age: 5,
-    weight: '20 lbs'
-};
-
-const getName = (spot) => {
-    const { name } = spot
+const getName = (item) => {
+    const name = item['name']
         return name;
 };
 
