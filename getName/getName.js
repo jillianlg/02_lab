@@ -5,7 +5,7 @@ const spot = {
 };
 
 const getName = (spot) => {
-    const name = spot.name
+    const { name } = spot
         return name;
 };
 
