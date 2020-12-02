@@ -1,17 +1,13 @@
 const capitalizeAndFilter = (array) => {
-    const newArray = [];
-    for(let i = 0; i < array.length; i++) {
-        const item = array[i];
-        const capitalItem = item.toUpperCase();
 
-        if(capitalItem.startsWith('F')) {
-            continue;
-        }else {
-            newArray.push(capitalItem)
-        }
-    }
-    return newArray
-};
+    return array
+    .filter(item => {
+        return !item.startsWith('f');
+    })
+    .map(item => {
+        return item.toUpperCase();
+    })   
+}
 
 module.exports = {
     capitalizeAndFilter
